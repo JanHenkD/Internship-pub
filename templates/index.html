@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<title> Basic Website Utility</title>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg"></svg>
+  <button type="button">Funtion1</button>
+  <button type="button" onclick ="createbox()">Function2</button>   
+  <form>
+  <input type="number" id="a">
+  <input type="button" onclick="createlines()" value="press me">
+  </form> 
+<style>
+        body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strokeGroup line {
+  cursor: pointer;
+  stroke: white;
+  stroke-width: 4;
+  fill: transparent;
+}
+
+.target {
+  fill: yellow;
+}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+
+    <script>
+    createbox()
+    createpins()
+
+    </script>
+
+</body>
+
+</html>
+
+
